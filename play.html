@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Play Detail — Theater Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body class="play-detail-page">
+
+  <!-- NAV -->
+  <nav class="nav nav-dark" id="nav">
+    <a class="nav-logo" href="index.html">YourName</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#plays">Plays</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="index.html#press">Press</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PLAY HERO -->
+  <div class="play-hero" id="playHero">
+    <div class="play-hero-bg" id="playHeroBg"></div>
+    <div class="play-hero-overlay"></div>
+    <div class="play-hero-content">
+      <a href="index.html#plays" class="back-link">← All Productions</a>
+      <p class="play-hero-genre" id="playGenre"></p>
+      <h1 class="play-hero-title" id="playTitle"></h1>
+      <p class="play-hero-year" id="playYear"></p>
+    </div>
+  </div>
+
+  <!-- PLAY BODY -->
+  <main class="play-body container" id="playBody">
+
+    <!-- Quick Info Bar -->
+    <div class="play-meta-bar" id="playMetaBar">
+      <div class="meta-item"><span class="meta-label">Role</span><span class="meta-val" id="metaRole"></span></div>
+      <div class="meta-item"><span class="meta-label">Language</span><span class="meta-val" id="metaLang"></span></div>
+      <div class="meta-item"><span class="meta-label">Venue</span><span class="meta-val" id="metaVenue"></span></div>
+      <div class="meta-item"><span class="meta-label">Shows</span><span class="meta-val" id="metaShows"></span></div>
+      <div class="meta-item"><span class="meta-label">Playwright</span><span class="meta-val" id="metaPlaywright"></span></div>
+    </div>
+
+    <!-- Synopsis -->
+    <section class="play-section">
+      <h2 class="play-section-title">Synopsis</h2>
+      <div class="play-synopsis" id="playSynopsis"></div>
+    </section>
+
+    <!-- My Journey -->
+    <section class="play-section">
+      <h2 class="play-section-title">My Journey With This Play</h2>
+      <div class="play-journey" id="playJourney"></div>
+    </section>
+
+    <!-- Cast & Crew -->
+    <section class="play-section" id="castSection">
+      <h2 class="play-section-title">Cast &amp; Crew</h2>
+      <div class="cast-grid" id="castGrid"></div>
+    </section>
+
+    <!-- Production Photos -->
+    <section class="play-section" id="photosSection">
+      <h2 class="play-section-title">Production Photographs</h2>
+      <div class="play-photos-grid" id="playPhotosGrid"></div>
+    </section>
+
+    <!-- Press for this play -->
+    <section class="play-section" id="playPressSection">
+      <h2 class="play-section-title">Press &amp; Reviews</h2>
+      <div class="play-press-list" id="playPressList"></div>
+    </section>
+
+    <!-- Awards for this play -->
+    <section class="play-section" id="playAwardsSection">
+      <h2 class="play-section-title">Awards</h2>
+      <div class="awards-list" id="awardsList"></div>
+    </section>
+
+    <!-- Navigation between plays -->
+    <div class="play-nav-footer" id="playNavFooter">
+      <a href="#" class="play-nav-btn" id="prevPlay">← Previous Production</a>
+      <a href="index.html#plays" class="btn btn-primary">All Productions</a>
+      <a href="#" class="play-nav-btn" id="nextPlay">Next Production →</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-name">AM production company</p>
+      <p class="footer-tagline">Theater Artist · Director · Actor</p>
+      <p class="footer-copy">© 2025 All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+    <button class="lightbox-next" id="lightboxNext">›</button>
+  </div>
+
+  <script src="plays-data.js"></script>
+  <script src="play-detail.js"></script>
+</body>
+</html>
